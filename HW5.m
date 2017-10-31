@@ -82,8 +82,11 @@ iplane = reader{ii}.getIndex(zplane-1,chan-1,time-1)+1;
 img{ii} = bfGetPlane(reader{ii},iplane);
 end
 %Replace image 2 with the best version
-iplane = reader{2}.getIndex(zplane-1,2,time-1)+1
+iplane = reader{2}.getIndex(zplane-1,2,time-1)+1;
 img{2}= bfGetPlane(reader{2},iplane);
+
+img{4} = im2double(img{4});
+img{4} = imfilter(img{4},fspecial('gaussian',4,2));
 
 for ii = 1:4
     figure(5);subplot(2,2,ii);
@@ -94,8 +97,9 @@ end
 
 %Moved files to Ilastik
 
+%Reimport Ilastik files and view the resulting masks. 
 for ii = 1:4
-    filename = ['image' num2srt(ii) '_Simple Segmentation.h5'];
-    imgMask{ii} = readIllastikFile(filename);
+    filename = ['image' num2str(ii) '_Simple Segmentation.h5']
+    imgMask{ii} = readIlastikFile(filename)
     figure(6);subplot(2,2,ii);imshow(img{ii},[]);
 end
