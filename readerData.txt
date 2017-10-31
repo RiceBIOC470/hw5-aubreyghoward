@@ -1,0 +1,20 @@
+Data for image number: 1 
+Channel Num: 1 
+Time Scale: 1 
+Z slices: 1 
+ 
+Data for image number: 2 
+Channel Num: 3 
+Time Scale: 1 
+Z slices: 1 
+ 
+Data for image number: 3 
+Channel Num: 1 
+Time Scale: 1 
+Z slices: 1 
+ 
+Data for image number: 4 
+Channel Num: 1 
+Time Scale: 1 
+Z slices: 1 
+ 
