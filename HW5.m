@@ -1,4 +1,16 @@
 %HW5
+%GB comments:
+1a 70 question asks to output a file in the repository of the mask image. No image provided.
+1b 100
+1c 100
+1d 100 Ill give credit here, but should consider doing more to segment the cells. You suggest watershed so you should have try to implement the function. 
+
+Comment applies to all the images: In general, I am confused with what you are trying to accomplish. You import the original images  and apply the same metrics of filtering to each image sample. Each image is unique and accordingly needs to be treated differently to bet the best segmented image. Filtering alone is not going to accomplish this. Second, you go on and try to use segmented images from illastik too. These images alone are still not sufficient because most of them need post processing as well. Come talk to me and we can discuss this question in case you were confused. 
+2yeast: 70
+2worm: 70
+2bacteria: 70
+2phase: 70
+Overall: 81
 
 % Note. You can use the code readIlastikFile.m provided in the repository to read the output from
 % ilastik into MATLAB.
